@@ -2,34 +2,191 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Snappy Moose</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<meta name="description" content="Snappy Moose LLC — software development contracting and self-published apps.">
+<meta name="color-scheme" content="dark light">
 <style>
-  html, body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #1a1a1a;
+  :root {
+    color-scheme: dark;
+    --bg: #0d0d0f;
+    --bg-alt: #16161a;
+    --text: #f2f2f4;
+    --text-muted: #a3a3ad;
+    --accent: #6ea8fe;
+    --border: #2a2a30;
   }
 
-  .press-start-2p-regular {
-    font-family: "Press Start 2P", system-ui;
-    font-weight: 400;
-    font-style: normal;
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  header.hero {
+    text-align: center;
+    padding: 4rem 1.5rem 3rem;
+  }
+
+  header.hero img {
+    display: block;
+    width: 100%;
+    max-width: 1024px;
+    height: auto;
+    margin: 0 auto;
   }
 
   h1 {
-    color: #f5f5f5;
-    font-size: 4.5rem;
-    letter-spacing: 0.05em;
+    margin: 0 0 0.5rem;
+    font-size: 2.25rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  .tagline {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+  }
+
+  section {
+    padding: 2.5rem 0;
+    border-top: 1px solid var(--border);
+  }
+
+  section h2 {
+    font-size: 1.4rem;
+    margin: 0 0 1rem;
+  }
+
+  section p {
+    color: var(--text-muted);
+    margin: 0 0 1rem;
+  }
+
+  section p:last-child {
+    margin-bottom: 0;
+  }
+
+  a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  #privacy h3 {
+    font-size: 1.05rem;
+    margin: 1.5rem 0 0.4rem;
+  }
+
+  #privacy h3:first-of-type {
+    margin-top: 0;
+  }
+
+  .effective-date {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 2rem 0 3rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  footer a {
+    color: var(--text-muted);
+  }
+
+  footer .footer-links {
+    margin-bottom: 0.75rem;
+  }
+
+  footer .footer-links a + a {
+    margin-left: 1.25rem;
   }
 </style>
 </head>
 <body>
-  <h1 class="press-start-2p-regular">Snappy Moose</h1>
+  <main>
+    <header class="hero">
+      <img src="snappy_moose.png" alt="Snappy Moose">
+    </header>
+
+    <section id="services">
+      <h2>What We Do</h2>
+      <p>With over three decades of industry experience, Snappy Moose provides custom software development and contract engineering services for businesses that need experienced, hands-on development help.</p>
+      <p>We also design, build, and publish our own mobile and web apps.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>For contracting inquiries, app support, or anything else, reach us at <a href="mailto:contact@snappymoose.com">contact@snappymoose.com</a>.</p>
+    </section>
+
+    <section id="privacy">
+      <h2>Privacy Policy</h2>
+      <p class="effective-date">Effective date: July 26, 2026</p>
+      <p>This Privacy Policy applies to this website and to all apps published by Snappy Moose LLC ("Snappy Moose," "we," "us"). We designed our data practices to be as protective of your privacy as possible.</p>
+
+      <h3>Data We Collect</h3>
+      <p>We collect only the minimum information that is legally required to operate and support our apps and services. For example, purchase and transaction records are handled by the Apple App Store or Google Play as required for tax and accounting compliance. We do not collect personal data such as your name, contacts, location, or browsing/usage history for analytics, advertising, or profiling purposes.</p>
+
+      <h3>How We Use Data</h3>
+      <p>Any data we are legally required to hold is used solely to satisfy legal, financial, and accounting obligations, and to operate the specific app or service it relates to. We never share, sell, or reuse this data across other products, and we never use it for advertising or marketing.</p>
+
+      <h3>Third Parties</h3>
+      <p>Payments are processed by the Apple App Store or Google Play under their own respective privacy policies. Snappy Moose does not embed its own third-party analytics or advertising SDKs in our apps.</p>
+
+      <h3>Data Retention</h3>
+      <p>We retain legally required data only for as long as the law requires, after which it is deleted.</p>
+
+      <h3>Children's Privacy</h3>
+      <p>We do not knowingly collect data from children.</p>
+
+      <h3>Your Rights</h3>
+      <p>You may contact us at <a href="mailto:contact@snappymoose.com">contact@snappymoose.com</a> to request access to, or deletion of, any data we hold about you.</p>
+
+      <h3>Changes to This Policy</h3>
+      <p>If this policy changes, the update will be posted on this page with a revised effective date.</p>
+
+      <h3>Contact</h3>
+      <p>Questions about this policy can be sent to <a href="mailto:contact@snappymoose.com">contact@snappymoose.com</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="#privacy">Privacy Policy</a>
+      <a href="mailto:contact@snappymoose.com">Contact</a>
+    </div>
+    <div>&copy; <span id="year"></span> Snappy Moose LLC</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
